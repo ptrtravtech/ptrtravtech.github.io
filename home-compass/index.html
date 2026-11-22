@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Home Compass | PtrtravTech</title>
+  <style>
+    :root {
+      --green-dark: #1B5E20;
+      --green-mid: #2E7D32;
+      --green-light: #43A047;
+      --accent: #81C784;
+      --bg: #F9FBF9;
+      --card: #FFFFFF;
+      --text: #212121;
+      --muted: #616161;
+      --border: #E0E0E0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    header {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-light) 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .app-icon {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      margin-bottom: 16px;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p { margin-top: 8px; font-size: 0.95rem; opacity: 0.85; }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px 24px;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .lang-btn {
+      padding: 8px 22px;
+      border-radius: 999px;
+      border: 2px solid var(--green-light);
+      background: transparent;
+      color: var(--green-mid);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--green-light);
+      color: #fff;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .version-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 20px;
+      margin-bottom: 32px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .version-bar span { color: var(--green-mid); font-weight: 600; }
+    section { margin-bottom: 40px; }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      border-left: 4px solid var(--green-light);
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+    p { margin-bottom: 12px; color: var(--text); }
+    ul, ol { padding-left: 22px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green-mid);
+      margin-bottom: 8px;
+    }
+    .tag {
+      display: inline-block;
+      background: #E8F5E9;
+      color: var(--green-dark);
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+    .tag.red { background: #FFEBEE; color: #B71C1C; }
+    .tag.blue { background: #E3F2FD; color: #0D47A1; }
+    .tag.orange { background: #FFF3E0; color: #E65100; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+    th {
+      background: var(--green-dark);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #F1F8F1; }
+    .highlight {
+      background: #E8F5E9;
+      border-left: 4px solid var(--green-light);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+    .contact-box {
+      background: linear-gradient(135deg, var(--green-dark), var(--green-light));
+      color: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      text-align: center;
+    }
+    .contact-box a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .contact-box a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-icon">🧭</div>
+  <h1>Home Compass – Privacy Policy</h1>
+  <p>PtrtravTech · Effective Date: November 21, 2026</p>
+</header>
+
+<div class="lang-switch">
+  <button class="lang-btn active" onclick="switchLang('en')">English</button>
+  <button class="lang-btn" onclick="switchLang('zh')">中文</button>
+</div>
+
+<!-- ==============================
+     ENGLISH VERSION
+     ============================== -->
+<div id="lang-en" class="lang-section active">
+  <div class="container">
+
+    <div class="version-bar">
+      📄 Version: <span>1.0</span> &nbsp;|&nbsp; Effective Date: <span>November 21, 2026</span> &nbsp;|&nbsp; App: <span>Home Compass (宜居罗盘)</span> &nbsp;|&nbsp; Developer: <span>PtrtravTech</span>
+    </div>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>Welcome to <strong>Home Compass</strong> (宜居罗盘), developed by <strong>PtrtravTech</strong>. We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information.</p>
+      <p>By downloading or using Home Compass, you agree to the terms described in this policy. If you do not agree, please do not use the app.</p>
+      <div class="highlight">
+        <strong>Key Summary:</strong> Home Compass is a local-first app. Floor plans, exterior photos, home records, and compass readings are stored <strong>only on your device</strong> and are analysed on the device. We do not request location permission. We use third-party services (Firebase and Google AdMob) that may collect limited usage data as described below.
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Information We Collect</h2>
+
+      <div class="card">
+        <h3><span class="tag">Local Only</span> Data You Create – Stored On-Device</h3>
+        <p>The following data is created and stored exclusively on your device. PtrtravTech does not have access to this data:</p>
+        <ul>
+          <li><strong>Floor plan images and markers</strong>: photos or files you choose, and the rooms, doors, and centre you mark, used to create floor-plan Feng Shui reports</li>
+          <li><strong>Exterior photos</strong>: photos of windows, balconies, and the building surroundings, used for on-device exterior analysis</li>
+          <li><strong>Home records</strong>: names, balcony facing, reports, and comparison notes you keep for each home</li>
+          <li><strong>Compass readings</strong>: heading used to measure balcony facing; readings never leave your device</li>
+          <li><strong>App preferences</strong>: language, theme, and related settings</li>
+        </ul>
+        <p>The App does not collect your date of birth and does not request location permission.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag blue">Analytics</span> Usage Data – Collected via Firebase Analytics</h3>
+        <p>We use <strong>Google Firebase Analytics</strong> to understand how users interact with the app. Firebase Analytics may automatically collect:</p>
+        <ul>
+          <li>App session duration and frequency</li>
+          <li>Screen views and navigation patterns</li>
+          <li>Device type, OS version, and language setting</li>
+          <li>App version and first open events</li>
+          <li>General geographic region (country-level, not precise location)</li>
+        </ul>
+        <p>This data is aggregated and pseudonymized. It is used solely to improve app performance and user experience. Firebase Analytics data is processed by Google LLC. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag orange">Crash Reports</span> Crash Data – Collected via Firebase Crashlytics</h3>
+        <p>We use <strong>Firebase Crashlytics</strong> to automatically detect and diagnose app crashes. Crashlytics may collect:</p>
+        <ul>
+          <li>Stack traces and error logs at the time of a crash</li>
+          <li>Device model, OS version, and app version</li>
+          <li>A randomly generated Crashlytics installation ID (not linked to your identity)</li>
+        </ul>
+        <p>This data is used only to fix bugs and improve stability. No personally identifiable information is included in crash reports. Crash collection is not enabled in debug builds.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag red">Advertising</span> Advertising Data – Collected via Google AdMob</h3>
+        <p>Home Compass displays ads powered by <strong>Google AdMob</strong>, including banner ads, interstitial ads, and rewarded ads. AdMob may collect:</p>
+        <ul>
+          <li>Advertising ID (Android Ad ID) to deliver personalized ads</li>
+          <li>Interaction data (ad views, clicks)</li>
+          <li>Device and network information for ad targeting</li>
+          <li>IP address (used to determine approximate location for ad relevance)</li>
+        </ul>
+        <p>You can opt out of personalized advertising by resetting or opting out of your device's Advertising ID in <strong>Settings → Privacy → Ads</strong> (Android). See <a href="https://support.google.com/ads/answer/2662922" target="_blank">Google's Ads Settings</a> for more options.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Permissions We Request</h2>
+      <table>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+        <tr><td>Camera</td><td>Used only when you take a photo of a floor plan, an exterior view, or use on-site AR measuring. We do not record video in the background.</td></tr>
+        <tr><td>Photos / photo library</td><td>Used only to read the pictures you choose for a floor plan or exterior analysis.</td></tr>
+        <tr><td>Compass / motion sensors</td><td>Used by the compass and on-site tools to measure facing. Readings stay on your device.</td></tr>
+        <tr><td>Internet</td><td>Required for loading advertisements (Google AdMob) and sending analytics/crash data (Firebase).</td></tr>
+      </table>
+      <p>We do <strong>not</strong> request access to your contacts, microphone, precise location, or call logs.</p>
+    </section>
+
+    <section>
+      <h2>4. How We Use Your Information</h2>
+      <ul>
+        <li>To provide and operate the core features of Home Compass (floor-plan and exterior analysis, compass facing, home records)</li>
+        <li>To keep floor plans, photos, reports, and settings on your device</li>
+        <li>To improve app performance, fix bugs, and develop new features (via analytics and crash reports)</li>
+        <li>To display advertisements (via Google AdMob)</li>
+        <li>To remember your preferences (language, theme) between app sessions</li>
+      </ul>
+      <p>We do <strong>not</strong> sell your personal data to third parties. We do <strong>not</strong> use your data for any purpose beyond what is described in this policy.</p>
+    </section>
+
+    <section>
+      <h2>5. Third-Party Services</h2>
+      <p>Home Compass integrates the following third-party services, each with its own privacy policy:</p>
+      <table>
+        <tr><th>Service</th><th>Provider</th><th>Privacy Policy</th></tr>
+        <tr><td>Firebase Analytics</td><td>Google LLC</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td></tr>
+        <tr><td>Firebase Crashlytics</td><td>Google LLC</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td></tr>
+        <tr><td>Google AdMob</td><td>Google LLC</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
+        <tr><td>Google Fonts</td><td>Google LLC</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
+        <tr><td>System sharing</td><td>Your device</td><td>Handled by the operating system when you choose to share a report</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>6. Data Retention &amp; Deletion</h2>
+      <p><strong>On-device data</strong> (floor plans, photos, reports, home records, settings) is retained until you delete it in the app or uninstall the app. Deleting a home deletes its reports as well. We do not have the ability to delete data stored on your device.</p>
+      <p><strong>Analytics and crash data</strong> collected by Firebase is retained according to Google's standard data retention policies (typically up to 14 months for Analytics). You may request deletion by contacting us at <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a>.</p>
+      <p><strong>Advertising data</strong> is managed by Google AdMob according to Google's data retention policies.</p>
+    </section>
+
+    <section>
+      <h2>7. How to request deletion of your data</h2>
+      <div class="highlight">
+        <p><strong>For Google Play &amp; data safety disclosures:</strong> You may request deletion of personal data associated with your use of Home Compass that is processed by us or by our service providers (including Google Firebase Analytics, Firebase Crashlytics, and Google AdMob).</p>
+      </div>
+      <p>To submit a <strong>data deletion request</strong>:</p>
+      <ol>
+        <li>Email us at <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a>.</li>
+        <li>Use a subject line such as: <strong>Home Compass – Data deletion request</strong>.</li>
+        <li>Briefly describe what you want deleted (e.g. analytics/crash data associated with your use of the app). Including your country/region helps us apply the correct legal requirements.</li>
+      </ol>
+      <p>We will acknowledge your request and respond within <strong>30 days</strong> where required by applicable law, or sooner when practicable. We may need to verify your request to protect your privacy.</p>
+      <p><strong>Data stored only on your device</strong> (floor plans, photos, reports, home records, app settings) is not on our servers. To remove it, delete the content in the app or uninstall Home Compass. Uninstalling the app typically erases locally stored app data on your device.</p>
+      <p><strong>Google-held data:</strong> You can also manage data tied to your Google account and ad personalization at <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google Data &amp; privacy</a> and <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
+    </section>
+
+    <section>
+      <h2>8. Children's Privacy</h2>
+      <p>Home Compass is not directed at children under the age of <strong>13</strong> (or the applicable age of digital consent in your country). We do not knowingly collect personal information from children under 13.</p>
+      <p>If you are a parent or guardian and believe your child has provided personal information through the app, please contact us at <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a> and we will take steps to delete such information.</p>
+    </section>
+
+    <section>
+      <h2>9. Your Rights &amp; Choices</h2>
+      <p>Depending on your location, you may have the following rights:</p>
+      <ul>
+        <li><strong>Access:</strong> Request a summary of what data we hold about you.</li>
+        <li><strong>Deletion:</strong> Request deletion of any personal data we hold — see <strong>Section 7</strong> for step-by-step instructions (note: on-device data must be deleted by you or by uninstalling the app).</li>
+        <li><strong>Opt-out of personalized ads:</strong> Go to your device's <strong>Settings → Privacy → Ads</strong> to reset or opt out of your Advertising ID.</li>
+        <li><strong>Opt-out of analytics:</strong> Contact us at <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a> to request that Firebase Analytics data collection be disabled for your device.</li>
+      </ul>
+      <p>Residents of the <strong>European Economic Area (EEA)</strong> have additional rights under GDPR, including the right to object to processing and the right to data portability. Residents of <strong>California (USA)</strong> have rights under the CCPA, including the right to know and the right to opt out of the sale of personal information (we do not sell personal information).</p>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a>. We will respond within 30 days.</p>
+    </section>
+
+    <section>
+      <h2>10. Data Security</h2>
+      <p>All data stored locally on your device is protected by your device's built-in security (e.g., device encryption, app sandboxing). Floor-plan and exterior recognition run on the device. Data transmitted by third-party services (Firebase, AdMob) is encrypted in transit using industry-standard TLS/HTTPS protocols.</p>
+      <p>While we take reasonable measures to protect your information, no method of transmission or storage is 100% secure. We encourage you to protect your device with a screen lock.</p>
+    </section>
+
+    <section>
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in the app or applicable law. When we do, we will update the "Effective Date" at the top of this page. For significant changes, we will notify you through an in-app notice or an app update.</p>
+      <p>Your continued use of Home Compass after any changes constitutes your acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>12. Contact Us</h2>
+      <div class="contact-box">
+        <p style="font-size:1.05rem; font-weight:600; margin-bottom:12px;">Questions or concerns about this Privacy Policy?</p>
+        <p>Developer: <strong>PtrtravTech</strong></p>
+        <p>Email: <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a></p>
+        <p style="margin-top:12px; font-size:0.85rem; opacity:0.85;">We typically respond within 5 business days.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ==============================
+     CHINESE VERSION
+     ============================== -->
+<div id="lang-zh" class="lang-section">
+  <div class="container">
+
+    <div class="version-bar">
+      📄 版本：<span>1.0</span> &nbsp;|&nbsp; 生效日期：<span>2026年11月21日</span> &nbsp;|&nbsp; 应用：<span>宜居罗盘（Home Compass）</span> &nbsp;|&nbsp; 开发者：<span>PtrtravTech</span>
+    </div>
+
+    <section>
+      <h2>1. 引言</h2>
+      <p>欢迎使用由 <strong>PtrtravTech</strong> 开发的 <strong>宜居罗盘</strong>（Home Compass）。我们尊重您的隐私，并致力于保护您的个人信息。本隐私政策说明我们收集哪些信息、如何使用这些信息，以及您对这些信息所拥有的权利。</p>
+      <p>下载或使用宜居罗盘，即表示您同意本政策所述的条款。如您不同意，请勿使用本应用。</p>
+      <div class="highlight">
+        <strong>核心摘要：</strong>宜居罗盘是一款以本地存储为核心的应用。户型图、外景照片、房源档案和罗盘读数均<strong>仅存储在您的设备上</strong>，识别也在本机完成。本应用不申请位置权限。我们使用 Firebase 和 Google AdMob 等第三方服务，这些服务可能会收集有限的使用数据，详见下文。
+      </div>
+    </section>
+
+    <section>
+      <h2>2. 我们收集的信息</h2>
+
+      <div class="card">
+        <h3><span class="tag">仅本地</span> 您创建的数据 — 仅存储在您的设备上</h3>
+        <p>以下数据由您创建，并完全存储在您的设备本地。PtrtravTech 无法访问这些数据：</p>
+        <ul>
+          <li><strong>户型图片与标注</strong>：您拍摄或选择的户型图，以及房间、门和中宫等标注，用于生成户型风水报告</li>
+          <li><strong>外景照片</strong>：窗外、阳台和楼栋环境的照片，用于在本机分析外景</li>
+          <li><strong>房源档案</strong>：您为每套房源保存的名称、阳台朝向、报告和对比记录</li>
+          <li><strong>罗盘读数</strong>：用于测量阳台朝向，读数不会离开设备</li>
+          <li><strong>应用偏好设置</strong>：语言、主题及相关设置</li>
+        </ul>
+        <p>本应用不收集出生日期，也不申请位置权限。</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag blue">分析</span> 使用数据 — 通过 Firebase Analytics 收集</h3>
+        <p>我们使用 <strong>Google Firebase Analytics</strong> 了解用户如何使用本应用。Firebase Analytics 可能自动收集：</p>
+        <ul>
+          <li>应用使用时长及频率</li>
+          <li>页面浏览记录及功能导航路径</li>
+          <li>设备类型、操作系统版本及语言设置</li>
+          <li>应用版本及首次启动事件</li>
+          <li>大致地理位置（国家/地区级别，非精确位置）</li>
+        </ul>
+        <p>上述数据经过汇总和假名化处理，仅用于改善应用性能和用户体验。Firebase Analytics 数据由 Google LLC 处理。详见 <a href="https://policies.google.com/privacy" target="_blank">Google 隐私政策</a>。</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag orange">崩溃报告</span> 崩溃数据 — 通过 Firebase Crashlytics 收集</h3>
+        <p>我们使用 <strong>Firebase Crashlytics</strong> 自动检测和诊断应用崩溃。Crashlytics 可能收集：</p>
+        <ul>
+          <li>崩溃时的堆栈跟踪和错误日志</li>
+          <li>设备型号、操作系统版本及应用版本</li>
+          <li>随机生成的 Crashlytics 安装 ID（与您的身份无关）</li>
+        </ul>
+        <p>这些数据仅用于修复错误和提升稳定性，崩溃报告中不含任何可识别个人身份的信息。调试版本不会开启崩溃收集。</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag red">广告</span> 广告数据 — 通过 Google AdMob 收集</h3>
+        <p>宜居罗盘通过 <strong>Google AdMob</strong> 展示广告，包括横幅广告、插页广告和激励广告。AdMob 可能收集：</p>
+        <ul>
+          <li>广告 ID（Android 广告标识符），用于投放个性化广告</li>
+          <li>广告互动数据（展示次数、点击次数）</li>
+          <li>设备和网络信息，用于广告定向</li>
+          <li>IP 地址（用于推断大致位置以匹配相关广告）</li>
+        </ul>
+        <p>您可以通过前往设备的<strong>「设置 → 隐私 → 广告」</strong>重置或退出广告 ID，从而选择退出个性化广告。更多选项请参见 <a href="https://support.google.com/ads/answer/2662922" target="_blank">Google 广告设置</a>。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. 我们申请的权限</h2>
+      <table>
+        <tr><th>权限</th><th>用途</th></tr>
+        <tr><td>相机</td><td>仅在您拍摄户型图、外景，或使用实景测量时使用。不会在后台录制视频。</td></tr>
+        <tr><td>相册</td><td>仅在您选择已有图片用于户型或外景分析时读取所选图片。</td></tr>
+        <tr><td>方向 / 运动传感器</td><td>罗盘和实景工具用它测量朝向，读数不会离开设备。</td></tr>
+        <tr><td>网络</td><td>加载广告（Google AdMob）及发送分析/崩溃数据（Firebase）所必需。</td></tr>
+      </table>
+      <p>我们<strong>不会</strong>申请访问您的联系人、麦克风、精确位置或通话记录。</p>
+    </section>
+
+    <section>
+      <h2>4. 我们如何使用您的信息</h2>
+      <ul>
+        <li>提供和运营宜居罗盘的核心功能（户型与外景分析、罗盘测朝向、房源档案）</li>
+        <li>将户型图、照片、报告和设置保存在您的设备上</li>
+        <li>改善应用性能、修复错误并开发新功能（通过分析和崩溃报告）</li>
+        <li>展示广告（通过 Google AdMob）</li>
+        <li>在应用会话之间记住您的偏好设置（语言、主题）</li>
+      </ul>
+      <p>我们<strong>不会</strong>将您的个人数据出售给第三方，也<strong>不会</strong>将您的数据用于本政策以外的任何目的。</p>
+    </section>
+
+    <section>
+      <h2>5. 第三方服务</h2>
+      <p>宜居罗盘集成了以下第三方服务，每项服务均有其自己的隐私政策：</p>
+      <table>
+        <tr><th>服务</th><th>提供商</th><th>隐私政策</th></tr>
+        <tr><td>Firebase Analytics（分析）</td><td>Google LLC</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td></tr>
+        <tr><td>Firebase Crashlytics（崩溃报告）</td><td>Google LLC</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td></tr>
+        <tr><td>Google AdMob（广告）</td><td>Google LLC</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
+        <tr><td>Google Fonts</td><td>Google LLC</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
+        <tr><td>系统分享</td><td>您的设备</td><td>仅在您选择分享报告时由系统处理</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>6. 数据保留与删除</h2>
+      <p><strong>设备本地数据</strong>（户型图、照片、报告、房源档案、设置）将保留至您在应用内删除或卸载应用为止。删除房源会一并删除其报告。我们无法删除存储在您设备上的数据。</p>
+      <p>Firebase 收集的<strong>分析和崩溃数据</strong>依据 Google 的标准数据保留政策进行保留（Analytics 数据通常最长保留 14 个月）。您可通过发送邮件至 <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a> 申请删除。</p>
+      <p><strong>广告数据</strong>由 Google AdMob 依据 Google 的数据保留政策进行管理。</p>
+    </section>
+
+    <section>
+      <h2>7. 如何申请删除您的数据</h2>
+      <div class="highlight">
+        <p><strong>针对 Google Play 与数据安全声明：</strong>您可以申请删除与使用宜居罗盘相关、由我们或我们的服务处理方（包括 Google Firebase Analytics、Firebase Crashlytics 与 Google AdMob）处理的个人数据。</p>
+      </div>
+      <p>提交<strong>数据删除请求</strong>请按以下步骤：</p>
+      <ol>
+        <li>发送邮件至 <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a>。</li>
+        <li>邮件主题建议填写：<strong>宜居罗盘 – 数据删除请求</strong>。</li>
+        <li>简要说明希望删除的数据类型（例如：与应用使用相关的分析/崩溃数据）。注明您所在国家/地区有助于我们适用正确的法律要求。</li>
+      </ol>
+      <p>我们将在适用法律要求的期限内（通常为 <strong>30 天内</strong>）予以回复，或在可行情况下更早处理。为保护您的隐私，我们可能需要核实您的身份。</p>
+      <p><strong>仅存储在您设备上的数据</strong>（户型图、照片、报告、房源档案、应用设置等）不在我们的服务器上。请在应用内删除相关内容，或卸载宜居罗盘。卸载应用后，设备上的本地应用数据通常会被清除。</p>
+      <p><strong>由 Google 持有的数据：</strong>您还可以通过 <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google 数据与隐私</a> 与 <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google 广告设置</a> 管理与 Google 账号及广告个性化相关的数据。</p>
+    </section>
+
+    <section>
+      <h2>8. 儿童隐私</h2>
+      <p>宜居罗盘不针对 <strong>13 岁以下</strong>（或您所在国家/地区数字同意年龄以下）的儿童。我们不会故意收集 13 岁以下儿童的个人信息。</p>
+      <p>如果您是家长或监护人，并认为您的孩子通过应用提供了个人信息，请通过 <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a> 与我们联系，我们将采取措施删除相关信息。</p>
+    </section>
+
+    <section>
+      <h2>9. 您的权利与选择</h2>
+      <p>根据您所在的地区，您可能享有以下权利：</p>
+      <ul>
+        <li><strong>访问权：</strong>申请查看我们持有的关于您的数据摘要。</li>
+        <li><strong>删除权：</strong>申请删除我们持有的个人数据——详见<strong>第 7 节</strong>的操作说明（注意：设备本地数据须由您在应用内删除或通过卸载应用清除）。</li>
+        <li><strong>退出个性化广告：</strong>前往设备的<strong>「设置 → 隐私 → 广告」</strong>重置或退出广告 ID。</li>
+        <li><strong>退出分析：</strong>发送邮件至 <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a>，申请停用您设备的 Firebase Analytics 数据收集。</li>
+      </ul>
+      <p><strong>欧洲经济区（EEA）</strong>居民根据《通用数据保护条例》（GDPR）享有额外权利，包括反对处理的权利和数据可携权。<strong>美国加利福尼亚州</strong>居民根据《加州消费者隐私法》（CCPA）享有知情权和退出个人信息销售的权利（我们不出售个人信息）。</p>
+      <p>如需行使上述任何权利，请通过 <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a> 与我们联系，我们将在 30 天内予以回复。</p>
+    </section>
+
+    <section>
+      <h2>10. 数据安全</h2>
+      <p>存储在您设备上的所有本地数据均受您设备内置安全机制的保护（例如设备加密、应用沙箱）。户型和外景识别在本机完成。第三方服务（Firebase、AdMob）传输的数据采用业界标准的 TLS/HTTPS 协议进行加密传输。</p>
+      <p>尽管我们采取了合理措施保护您的信息，但没有任何传输或存储方式能达到 100% 的安全性。我们建议您为设备设置屏幕锁定保护。</p>
+    </section>
+
+    <section>
+      <h2>11. 政策变更</h2>
+      <p>我们可能会不时更新本隐私政策，以反映应用或适用法律的变化。更新时，我们将修改本页顶部的「生效日期」。若发生重大变更，我们将通过应用内通知或应用更新告知您。</p>
+      <p>在任何变更后继续使用宜居罗盘，即表示您接受更新后的政策。</p>
+    </section>
+
+    <section>
+      <h2>12. 联系我们</h2>
+      <div class="contact-box">
+        <p style="font-size:1.05rem; font-weight:600; margin-bottom:12px;">对本隐私政策有任何疑问或顾虑？</p>
+        <p>开发者：<strong>PtrtravTech</strong></p>
+        <p>邮箱：<a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a></p>
+        <p style="margin-top:12px; font-size:0.85rem; opacity:0.85;">我们通常在 5 个工作日内回复。</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 PtrtravTech · Home Compass · <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
