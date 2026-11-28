@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Vozto | PtrtravTech</title>
+  <meta name="description" content="Vozto privacy policy: voice notes are transcribed in memory, never stored on our servers. What leaves your device and what stays on it." />
+  <link rel="icon" href="icon.png" />
+  <style>
+    :root {
+      --brand-1: #4F46E5;
+      --brand-2: #7C3AED;
+      --brand-3: #DB2777;
+      --bg: #F8F7FD;
+      --card: #FFFFFF;
+      --text: #111827;
+      --muted: #5B6270;
+      --border: rgba(17, 24, 39, 0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      background: linear-gradient(135deg, var(--brand-1) 0%, var(--brand-2) 55%, var(--brand-3) 100%);
+      color: #fff;
+      padding: 44px 24px 38px;
+      text-align: center;
+    }
+    header img {
+      width: 76px;
+      height: 76px;
+      border-radius: 20px;
+      box-shadow: 0 10px 26px rgba(17, 24, 39, 0.28);
+      margin-bottom: 14px;
+      background: #fff;
+    }
+    header h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.4px; }
+    header p { margin-top: 6px; font-size: 0.9rem; opacity: 0.88; }
+    .container { max-width: 860px; margin: 0 auto; padding: 36px 24px 80px; }
+    .version-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-bottom: 28px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .version-bar code {
+      background: rgba(79, 70, 229, 0.08);
+      color: var(--brand-1);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+    }
+    .crosslink {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-bottom: 28px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .crosslink a { color: var(--brand-1); font-weight: 600; text-decoration: none; }
+    .crosslink a:hover { text-decoration: underline; }
+    section { margin-bottom: 34px; }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      padding-left: 12px;
+      border-left: 4px solid var(--brand-2);
+      line-height: 1.4;
+    }
+    p, li { color: var(--muted); font-size: 0.96rem; }
+    p + p { margin-top: 10px; }
+    ul { margin: 10px 0 0 22px; }
+    li { margin-bottom: 8px; }
+    strong { color: var(--text); }
+    a { color: var(--brand-1); }
+    code {
+      background: rgba(17, 24, 39, 0.06);
+      padding: 1px 6px;
+      border-radius: 5px;
+      font-size: 0.86em;
+    }
+    .highlight {
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.07), rgba(219, 39, 119, 0.07));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
+    .highlight p { color: var(--text); }
+    footer {
+      margin-top: 44px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--brand-1); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icon.png" alt="Vozto app icon" />
+    <h1>Privacy Policy</h1>
+    <p>Vozto — voice notes to text, summary &amp; translation</p>
+  </header>
+
+  <div class="container">
+    <div class="version-bar">
+      <span>Last updated: November 28, 2026</span>
+      <span>·</span>
+      <span>Package: <code>com.ptrtrav.vozto</code></span>
+    </div>
+
+    <div class="crosslink">
+      Vozto is an independent app by PtrTrav Tech and is not affiliated with, endorsed by, or sponsored by WhatsApp, Meta, or Telegram.
+      See also our <a href="terms/">Terms of Use</a>.
+    </div>
+
+    <section>
+      <h2>1. Data processed during transcription &amp; translation</h2>
+      <ul>
+        <li><strong>Audio and text you submit.</strong> When you share or import an audio clip (or request a translation of a transcript), the payload is transmitted over HTTPS to our Cloudflare Worker backend and forwarded to Google Gemini (and, if enabled as a fallback, Groq Whisper) purely in request memory. <strong>We do not write your audio, transcripts, summaries, or translations to disk, databases, object storage, or server logs.</strong> The payload is discarded immediately after the response is returned.</li>
+        <li><strong>Anonymous device identifier.</strong> On first launch the app generates a random identifier (<code>vb_</code> + 32 hex characters) stored on your device. It is used solely to manage your daily free allowance, quota balance, and rewarded-ad callbacks. It is never linked to your name, email, phone number, or Google account.</li>
+        <li><strong>Anonymous usage and anti-abuse metadata.</strong> To prevent automated abuse and calculate region-appropriate rewarded-ad quotas, our servers store only non-content metadata: anonymous device ID, two-letter country code derived at the network edge, audio duration in seconds, AI provider status (success/error), and HMAC-hashed IP rate-limit counters. Raw IP addresses are never stored.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Data stored only on your device</h2>
+      <ul>
+        <li><strong>Transcript history.</strong> Saved transcripts, summaries, and translations live exclusively in a local SQLite database inside the app and are never synchronised to our servers.</li>
+        <li><strong>Preferences and session token.</strong> Language preferences are stored locally in Android SharedPreferences; the anonymous device ID and short-lived session token are stored in Android encrypted storage.</li>
+        <li><strong>Temporary shared-audio cache.</strong> Shared audio is copied briefly into the app's private cache directory so you can play it back while the transcription sheet is open, and is deleted automatically when you close the sheet.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Advertising (Google AdMob)</h2>
+      <p>
+        Vozto displays banner ads and optional rewarded video ads served by Google AdMob. Google may collect device and ad interaction data — including the Android advertising ID (<code>AD_ID</code>), coarse device and app information, and ad impressions or clicks — in accordance with
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+        When you complete a rewarded video, Google sends our server a verification callback containing the transaction ID, reward amount, and your anonymous device ID so we can credit your balance. The ad SDK never receives your audio or transcripts.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Firebase and service notifications</h2>
+      <p>
+        Vozto uses Firebase (Google) for crash reports, anonymous product analytics (event names such as "transcription completed" — never transcript content) and, only if you opt in, service notifications. Crash and analytics reports carry technical context such as device model, OS version, app version, and an app instance identifier; they never include audio or transcript text.
+      </p>
+      <p>
+        If you enable "notify me when it's back", we store an opaque Firebase Cloud Messaging token next to your anonymous device ID so we can tell you when the service is available again. You can switch this off at any time in Settings, and the token is then deleted.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Abuse protection (Firebase App Check)</h2>
+      <p>
+        Release builds attach a Firebase App Check token derived from Google Play Integrity to every API request. It only proves that the request came from an unmodified Vozto install; we verify it in memory and never store it.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Copyright and music</h2>
+      <p>
+        Vozto is a personal productivity tool for short voice messages you have the right to process. Do not upload songs, podcasts, audiobooks, or any recording you do not own or have permission to use. Music transcription, lyric extraction, and redistribution are out of scope. We do not store or share audio, so no library of copyrighted recordings exists on our side. Audio is limited to 60 seconds and is discarded after the request; responsibility for the material you choose to transcribe rests with you.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Your choices and data deletion</h2>
+      <ul>
+        <li>Delete any individual transcript from the history list inside the app at any time.</li>
+        <li>Uninstalling Vozto permanently removes your local transcript database, preferences, and anonymous device ID from your device.</li>
+        <li>Because we do not collect accounts and never store audio or transcripts on our servers, no personal content remains on our infrastructure. The anonymous quota and anti-abuse ledger is kept only while needed to enforce free allowances and fraud limits; rate-limit counters expire automatically. To have the ledger row for your device deleted, email us and we will remove it.</li>
+        <li>You can use the daily free allowance without watching any ad.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Children's privacy</h2>
+      <p>
+        Vozto is not directed to children under the age of 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with information, contact us and we will delete it.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Changes to this policy</h2>
+      <p>
+        If the way the app handles data changes, this page is updated first and the "last updated" date above changes. Material changes are also announced in the app's store listing notes.
+      </p>
+    </section>
+
+    <section class="highlight">
+      <h2 style="border-left-color: var(--brand-3);">10. Contact</h2>
+      <p>
+        PtrTrav Tech (lue) — <a href="mailto:ptrtravtech@gmail.com">ptrtravtech@gmail.com</a><br />
+        We answer privacy and deletion requests within 30 days.
+      </p>
+    </section>
+
+    <footer>
+      <a href="../">All PtrtravTech apps</a> &middot;
+      <a href="terms/">Terms of Use</a> &middot;
+      <a href="mailto:ptrtravtech@gmail.com">Contact</a>
+    </footer>
+  </div>
+</body>
+</html>
